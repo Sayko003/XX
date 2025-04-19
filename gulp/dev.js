@@ -127,7 +127,7 @@ gulp.task('images:dev', function () {
 					}),
 				])
 			)
-			.pipe(rename({ extname: '.webp' }))
+			// .pipe(rename({ extname: '.webp' }))
 			.pipe(gulp.dest('./build/img/'))
 			.pipe(gulp.src(['./src/img/**/*', '!./src/img/svgicons/**/*']))
 			.pipe(changed('./build/img/'))

@@ -1,0 +1,93 @@
+.how-was {
+    padding-bottom: 90px;
+}
+.how-was--title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.how-was--descr {
+    text-align: center;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.slider-how-was{
+    margin-top: 23px;
+    max-width: 100%;
+    width: 100%;
+}
+.how-was .swiper-slide{
+    max-width: 240px;
+}
+.arrow-how-was-prev, .arrow-how-was-next{
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+.arrow{
+    width: 100%;
+    height: 100%;
+    background: url('../../img/no-sprites/slider/arrow-right.svg') center center /cover no-repeat;
+}
+.arrow-how-was-prev{
+    transform: rotate(180deg);
+}
+.arrow-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.how-was .arrow--flex{
+    
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 129px;
+    width: 100%;
+}
+.all-photo{
+    margin-top: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--accent);
+    width: 284px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../img/section/how-was/button-bg.png') center center /cover no-repeat;
+}
+
+@media (max-width:768px) {
+    .how-was{
+        padding-bottom: 56px;
+    }
+    .container-full{
+        padding-right: 0;
+    }
+    .how-was .swiper-slide{
+        max-width: 133px;
+    }
+    .how-was .arrow--flex{
+        margin-top: 0;
+        max-width: 72px;
+    }
+    .arrow-how-was-prev, .arrow-how-was-next{
+        width: 30px;
+        height: 30px;
+    }
+    .how-was--title{
+        max-width: 300px;
+        font-size: 49px;
+        margin: 0 auto;
+        margin-bottom: 6px;
+    }
+    .how-was--descr{
+        font-size: 15px;
+    }
+}

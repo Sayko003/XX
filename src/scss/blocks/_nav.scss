@@ -1,0 +1,221 @@
+.nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -5;
+    top:0;
+    right: 0;
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+.nav-active{
+    z-index: 5;
+    right: 0;
+    opacity: 1;
+    .overlay{
+        opacity: 1;
+    }
+    .nav--close{
+        opacity: 1;
+    }
+}
+.overlay{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.nav--close {
+    background: url('../../img/no-sprites/menu/close.svg') center center /cover no-repeat;
+    position: absolute;
+    z-index: 7;
+    top: 41px;
+    right: 41px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    opacity: 0;
+}
+.nav--wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:-100%;
+    z-index: 6;
+    background: var(--text-beige);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    max-width: 1236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.2s linear;
+}
+.nav--wrapper-active{
+    right: 0;
+}
+.nav--block{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+}
+.nav--left {
+    max-width: 495px;
+    width: 100%;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top:-124px;
+        right: -42px;
+        background: url('../../img/section/menu/menu-top.png') center center /cover no-repeat;
+        width: 246px;
+        height: 121px;
+    }
+}
+.nav--logo-top {
+    width: 327px;
+    height: 75px;
+    background: url('../../img/no-sprites/menu/menu-logo-top.svg') center center /contain no-repeat;
+    margin: 0 auto;
+}
+.nav--title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 205px;
+    color: var(--accent);
+}
+.nav--subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 97px;
+    color: var(--bl);
+    text-align: center;
+}
+.nav--logo-bot {
+    width: 481px;
+    height: 62px;
+    background: url('../../img/no-sprites/menu/menu-logo-bot.svg') center center /contain no-repeat;
+    margin: 0 auto 61px auto;
+}
+.nav--city {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: var(--text-beige);
+    background: url('../../img/section/hero/hero-city-bg.png') center center /cover no-repeat;
+    max-width: 143px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav--list {
+    max-width: 523px;
+    width: 100%;
+}
+
+.nav--link {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 160%;
+    color: var(--accent);
+}
+
+@media (max-width:1236px ) {
+    .nav--wrapper{
+        max-width: 100%;
+        border-radius: 0 ;
+    }
+    .nav--logo-top{
+        width: 134px;
+        height: 31px;
+    }
+    .nav--title{
+        font-size: 103px;
+        text-align: center;
+    }
+    .nav--subtitle{
+        font-size: 52px;
+    }
+    .nav--logo-bot{
+        width: 150px;
+        height: 20px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+    .nav--link{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .nav--wrapper{
+        max-width: 314px;
+        right: auto;
+        left:-100%;
+        border-radius: 0 25px 25px 0;
+    }
+    .nav--wrapper-active{
+        left:0;
+    }
+    .nav--block{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav--title{
+        font-size: 63px;
+    }
+    .nav--subtitle{
+        font-size: 30px;
+    }
+    .nav--city{
+        font-size: 13px;
+        width: 105px;
+        height: 33px;
+    }
+    .nav--link{
+        font-size: 31px;
+    }
+    .nav--close{
+        width: 39px;
+        height: 39px;
+        right: auto;
+        left:264px;
+    }
+    .nav--left, .nav--list{
+        max-width: 251px;
+    }
+    .nav--list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar { display: none; }
+    }
+    .nav--link{
+        line-height: 100%;
+    }
+    .nav--left{
+        margin-bottom: 35px;
+    }
+    .nav--left::before{
+        width: 118px;
+        height: 59px;
+        top:auto;
+        right: -6px;
+        bottom: -65px;
+    }
+}

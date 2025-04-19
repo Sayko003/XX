@@ -1,0 +1,39 @@
+.price {
+    padding: 58px 0;
+}
+.price--img {
+    max-width: 232px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.price--h2 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.price--descr {
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .price{
+        padding: 20px 0;
+    }
+    .price--img{
+        max-width: 123px;
+    }
+    .price--h2{
+        font-size: 50px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+    .price--descr{
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .price--h2{
+        max-width: 235px;
+    }
+}

@@ -1,0 +1,153 @@
+.how-fun {
+    padding-bottom: 58px;
+    position: relative;
+}
+
+.how-fun--title {
+    text-align: center;
+}
+.how-fun--descr {
+    margin-bottom: 45px;
+}
+.how-fun--wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.how-fun--card {
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.how-fun--card--img{
+    min-height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    margin-bottom: 14px;
+}
+.how-fun--img-1{
+    img{
+        width: 102px;
+        height: 104px;
+    }
+    
+}
+.how-fun--img-2{
+    img{
+        width: 85px;
+        height: 79px;
+    }
+}
+.how-fun--img-3{
+    img{
+        width: 101px;
+        height: 105px;
+    }
+    
+}
+.how-fun--img-4{
+    img{
+        width: 101px;
+        height: 91px;
+    }
+}
+.how-fun--card--text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--bl);
+}
+
+.how-fun--decoration{
+    background: url('../../img/section/how-fun/bird.png') center center /cover no-repeat;
+    width: 477px;
+    height: 268px;
+    position: absolute;
+    top:-42px;
+    right: 43px;
+}
+@media (max-width: 1780px) {
+    .how-fun--decoration{
+        width: 227px;
+        height: 120px;
+        right: 10%;
+    }
+    
+}
+@media (max-width: 1400px){
+    .how-fun--decoration{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 8px auto 0 auto;
+        width: 477px;
+        height: 268px;
+    }
+    .how-fun--wrapper{
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .how-fun--title{
+        font-size: 49px;
+        max-width: 224px;
+        margin: 0 auto;
+    }
+    .how-fun--descr{
+        font-size: 11px;
+        margin-bottom: 13px;
+    }
+    .how-fun--wrapper{
+        gap: 18px;
+    }
+    .how-fun--card{
+        max-width: 150px;
+    }
+    .how-fun--card--text{
+        font-size: 11px;
+    }
+    .how-fun--decoration{
+        margin-top: 32px;
+        width: 227px;
+        height: 120px;
+    }
+    .how-fun--card--img{
+        min-height: 58px;
+    }
+    .how-fun--img-1{
+        img{
+            width: 58px;
+            height: 59px;
+        }
+    
+    }
+    .how-fun--img-2{
+        img{
+            width: 47px;
+            height: 44px;
+        }
+    }
+    .how-fun--img-3{
+        img{
+            width: 57px;
+            height: 59px;
+        }
+        
+    }
+    .how-fun--img-4{
+        img{
+            width: 56px;
+            height: 51px;
+        }
+    }
+}

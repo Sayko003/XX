@@ -1,0 +1,131 @@
+.organizer {
+    padding-bottom: 58px;
+}
+.organizer--top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    column-gap: 20px;
+    margin-bottom: 21px;
+}
+.organizer--img {
+    max-width: 294px;
+    width: 100%;
+}
+.organizer--block {
+    text-align: left;
+}
+.organizer--title {
+    margin-bottom: 15px;
+}
+.organizer--descr{
+    text-align: left;
+    font-size: 19px;
+    span{
+        font-weight: 700;
+    }
+}
+.slider-organizer{
+    max-width: 100%;
+    width: 100%;
+}
+.organizer .swiper-slide{
+    max-width: 240px;
+}
+.arrow-organizer-prev, .arrow-organizer-next{
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+.arrow{
+    width: 100%;
+    height: 100%;
+    background: url('../../img/no-sprites/slider/arrow-right.svg') center center /cover no-repeat;
+}
+.arrow-organizer-prev{
+    transform: rotate(180deg);
+}
+.arrow-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.organizer .arrow--flex{
+    
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 129px;
+    width: 100%;
+}
+.all-photo{
+    margin-top: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--accent);
+    width: 284px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../img/section/organizer/button-bg.png') center center /cover no-repeat;
+}
+
+@media (max-width: 768px) {
+    .organizer{
+        position: relative;
+        padding-bottom: 20px;
+    }
+    .container-full{
+        padding-right: 0;
+    }
+    .organizer .swiper-slide{
+        max-width: 133px;
+    }
+    .organizer .arrow--flex{
+        margin-top: 0;
+        max-width: 72px;
+    }
+    .arrow-organizer-prev, .arrow-organizer-next{
+        width: 30px;
+        height: 30px;
+    }
+    .organizer--top{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .organizer--title{
+        font-size: 49px;
+        max-width: 192px;
+        padding-left: 145px;
+        margin-bottom: 26px;
+    }
+    .organizer--descr{
+        font-size: 15px;
+    }
+    .organizer--img{
+        position: absolute;
+        width: 143px;
+        height: 126px;
+        top:-10px;
+        left:0;
+        img{
+            width: 100%;
+        }
+    }
+    .arrow-container{
+        margin-top: 13px;
+    }
+    .all-photo{
+        width: 160px;
+        height: 36px;
+        font-size: 11px;
+        margin-top: 0;
+    }
+}

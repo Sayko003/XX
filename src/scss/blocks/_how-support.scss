@@ -1,0 +1,163 @@
+.how-support {
+    padding: 0 0 100px 0;
+    overflow: hidden;
+}
+.position-relative {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        right: 50%;
+        transform: translateX(50%);
+        background: url('../../img/section/how-support/text-bot.png') center center /cover no-repeat;
+        width: 305px;
+        height: 98px;
+    }
+}
+.how-support--block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 20px;
+}
+.how-support--decoration {
+    background: url('../../img/section/how-support/text-decoration.png') center center /cover no-repeat;
+    width: 140px;
+    height: 74px;
+}
+
+.how-support--title {
+    text-align: center;
+    max-width: 495px;
+    margin-bottom: 0px;
+}
+
+.how-support--descr {
+    &:not(:last-child){
+        padding-top: 27px;
+        margin-bottom: 25px;
+    }
+}
+.how-support--pinterest {
+    max-width: 172px;
+    img{
+        width: 172px;
+        height: 49px;
+    }
+}
+.how-support--pinterest--title {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    color: var(--bl);
+}
+.how-support--pinterest--number {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #a7a7a7;
+}
+.how-support--line {
+    width: 100%;
+    height: 22px;
+    background: url('../../img/section/how-support/line.png') center center /cover no-repeat;
+    margin-top: 29px;
+    margin-bottom: 17px;
+}
+.how-support .swiper-slide{
+    max-width: 240px;
+}
+.arrow-support-prev, .arrow-support-next{
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+.arrow{
+    width: 100%;
+    height: 100%;
+    background: url('../../img/no-sprites/slider/arrow-right.svg') center center /cover no-repeat;
+}
+.arrow-support-prev{
+    transform: rotate(180deg);
+}
+.how-support .arrow-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.how-support .arrow--flex{
+    
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 129px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .how-support{
+        padding-bottom: 20px;
+    }
+    .how-support--block{
+        flex-direction: column;
+        align-items:center;
+        row-gap: 7px;
+    }
+    .how-support .h2{
+        font-size: 49px;
+        max-width: 270px;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .text-main{
+        font-size: 15px;
+    }
+    .how-support--descr:not(:last-child){
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .position-relative::before{
+        width: 169px;
+        height: 54px;
+    }
+    .how-support--pinterest {
+    max-width: 95px;
+    img{
+        width: 95px;
+        height: 27px;
+        }
+    }
+    .how-support--pinterest--title{
+        font-size: 11px;
+    }
+    .how-support--pinterest--number{
+        font-size: 8px;
+    }
+    .how-support--line{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .position-relative::before{
+        right: 40%;
+    }
+    .container-full{
+        padding-right: 0;
+    }
+    .how-support .swiper-slide{
+        max-width: 133px;
+    }
+    .how-support .arrow--flex{
+        margin-top: 10px;
+        max-width: 72px;
+    }
+    .arrow-support-prev, .arrow-support-next{
+        width: 30px;
+        height: 30px;
+    }
+}

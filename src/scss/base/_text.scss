@@ -1,0 +1,44 @@
+.hero-h1{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 223px;
+    color: var(--accent);
+}
+.hero-h1-subtitle{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 105px;
+    color: var(--link-color);
+}
+
+.h2{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 90px;
+    color: var(--accent);
+}
+.h3{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    color: var(--accent);
+}
+.text-main{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.buy{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 117%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--link-color);
+}

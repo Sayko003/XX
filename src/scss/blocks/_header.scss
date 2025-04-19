@@ -1,0 +1,155 @@
+.header {
+    padding: 60px 0 375px 0;
+    background: url('../../img/section/hero/hero-bg.png') center center /cover no-repeat;
+    background-color: #1A1A1A;
+}
+.header--wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 527px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.header--logo {
+    width: 353px;
+    height: 80px;
+    margin-bottom: 15px;
+    background: url('../../img/no-sprites/hero/hero-logo.svg') center center /cover no-repeat;
+}
+.hero-h1{
+    position: relative;
+    &::before{
+        content: '';
+        background: url('../../img/no-sprites/hero/hero-18+.svg') center center /cover no-repeat;
+        position: absolute;
+        top:-33px;
+        right:-33px;
+        width: 67px;
+        height: 67px;
+    }
+}
+.header--logo-bot {
+    display: block;
+    max-width: 521px;
+    width: 100%;
+    height: 76px;
+    background: url('../../img/no-sprites/hero/hero-subtitle.svg') center center /contain no-repeat;
+    margin-top: 10px;
+}
+.header--info {
+    position: absolute;
+    top: 205px;
+    right: -300px;
+}
+.header--text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: var(--text-beige);
+    text-align: left;
+    margin-bottom: 5px;
+}
+.header--map {
+    position: relative;
+    margin-bottom: 55px;
+    padding-left: 22px;
+    &::before{
+        content: '';
+        width: 18px;
+        height: 24px;
+        position: absolute;
+        top:0;
+        left:0;
+        background: url('../../img/no-sprites/hero/hero-geo.svg') center center /cover no-repeat;
+    }
+}
+.header--city {
+    background: url('../../img/section/hero/hero-city-bg.png') center center /cover no-repeat;
+    width: 155px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.header--burger{
+    background: url('../../img/no-sprites/menu/menu-burger.svg') center center /cover no-repeat;
+    width: 41px;
+    height: 41px;
+    z-index: 3;
+}
+.header--burger-mobile{
+    display: none;
+}
+@media (max-width:1150px) {
+    .header--info{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 80px auto 45px auto;
+    }
+    .header--text{
+        text-align: center;
+    }
+    .header--city{
+        margin: 0 auto;
+    }
+    .btn-main{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+        padding: 0 12px;
+    }
+    .header{
+        padding: 37px 0 29px 0;
+        background-position: 48% 50%;
+    }
+    .header--logo{
+        width: 155px;
+        height: 35px;
+        margin-bottom: 0;
+    }
+    .header--wrapper{
+        max-width: 259px;
+    }
+    
+    .hero-h1{
+        font-size: 107px;
+    }
+    .hero-h1-subtitle{
+        font-size: 50px;
+    }
+    .hero-h1::before{
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: -35px;
+    }
+    .header--logo-bot{
+        margin-top: -10px;
+    }
+    .header--map{
+        margin-bottom: 13px;
+    }
+    .btn-main{
+        padding: 14px 20px;
+        font-size: 20px;
+        height: 52px;
+    }
+
+    .header--burger-mobile{
+        display: block;
+        position: fixed;
+        top:14px;
+        left: 14px;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.partners {
+    padding-bottom: 20px;
+}
+.partners--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.partners--title {
+    text-align: center;
+}
+.partners--comming {
+    background: url('../../img/section/partners/coming-soon.png') center center /cover no-repeat;
+    width: 100%;
+    height: 296px;
+}
+@media (max-width:768px) {
+    .partners--img{
+        max-width: 268px;
+        margin: 0 auto;
+    }
+    .partners--title{
+        font-size: 50px;
+    }
+    .partners--comming{
+        height: 107px;
+    }
+}
